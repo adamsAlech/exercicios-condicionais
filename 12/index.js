@@ -12,7 +12,7 @@ Faça commit do programa.
 não esteja no intervalo de 1 a 7.
 */
 
-const diaDaSemana = 3;
+const diaDaSemana = 7;
 
 if (diaDaSemana === 1) {
     console.log('Segunda-Feira');
@@ -28,4 +28,6 @@ if (diaDaSemana === 1) {
     console.log('Sábado');
 } else if (diaDaSemana === 7) {
     console.log('Domingo');
+} else {
+    console.log('Número incorreto')
 }
