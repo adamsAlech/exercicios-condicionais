@@ -44,7 +44,7 @@ if (mesesDecorridos === 60) {
     console.log(`O VALOR TOTAL DA PARCELA É R$ ${totalAPagar}`);
 
 } if (mesesDecorridos >= 12 && mesesDecorridos < 60 && totalJaPagoPeloAluno < 1_800_000 && rendaMensalEmCentavos < 200_000) {
-    console.log(`O ALUNO NÃO PAGA A MENSALIDADE ESSE MÊS PORQUE NÃO ATINGIU O VALOR MINIMO DE GANHOS SALARIAL`)
+    console.log(`O ALUNO NÃO PAGA A MENSALIDADE ESSE MÊS PORQUE NÃO ATINGIU O VALOR MINIMO DE GANHOS SALARIAL`);
 
 } if (mesesDecorridos < 12) {
     console.log(`O ALUNO AINDA NÃO CONCLUIU O CURSO, PORTANTO NÃO TEM PARCELA A PAGAR`);
