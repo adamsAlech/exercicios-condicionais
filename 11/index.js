@@ -13,6 +13,8 @@ a pessoa não deve nada, ou seja, o valor da parcela é zero.
 **a)** Faça um programa que calcula o valor da parcela a ser paga pelo aluno. Imprima 
 uma mensagem bonita na tela, com o valor em reais.
 
+Faça commit do programa.
+
 **b)** Altere o seu programa anterior para que, quando o valor da parcela a ser pago for 0, 
 a mensagem explique porque o aluno não precisa pagar nada naquele mês.
 
@@ -27,20 +29,22 @@ const mesesDecorridos = 12;
 
 // Soma das parcelas já pagas pelo aluno nos meses anteriores (em centavos). Se for igual 
 //a 18 mil reais, o aluno não deve pagar mais nada, pois já quitou a dívida.
-const totalJaPagoPeloAluno = 10_000_000;
+const totalJaPagoPeloAluno = 1_000_000;
 
 const totalAPagar = (rendaMensalEmCentavos * 0.18);
 
-const restanteAPagar = (18_000_000 - totalJaPagoPeloAluno);
 
 if (mesesDecorridos === 60) {
     console.log('ALUNO ISENTO DE PAGAMENTO DE PARCELA, POIS JÁ VENCEU O PRAZO DE CARENCIA');
 
-} if (totalJaPagoPeloAluno === 18_000_000) {
+} if (totalJaPagoPeloAluno === 1_800_000) {
     console.log(`O ALUNO JÁ QUITOU O CURSO`);
 
-} if (mesesDecorridos >= 12 && mesesDecorridos < 60 && totalJaPagoPeloAluno < 18_000_000 && rendaMensalEmCentavos >= 200_000) {
+} if (mesesDecorridos >= 12 && mesesDecorridos < 60 && totalJaPagoPeloAluno < 1_800_000 && rendaMensalEmCentavos >= 200_000) {
     console.log(`O VALOR TOTAL DA PARCELA É R$ ${totalAPagar}`);
+
+} if (mesesDecorridos >= 12 && mesesDecorridos < 60 && totalJaPagoPeloAluno < 1_800_000 && rendaMensalEmCentavos < 200_000) {
+    console.log(`O ALUNO NÃO PAGA A MENSALIDADE ESSE MÊS PORQUE NÃO ATINGIU O VALOR MINIMO DE GANHOS SALARIAL`)
 
 } if (mesesDecorridos < 12) {
     console.log(`O ALUNO AINDA NÃO CONCLUIU O CURSO, PORTANTO NÃO TEM PARCELA A PAGAR`);
